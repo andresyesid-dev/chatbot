@@ -1,0 +1,59 @@
+.alert_dialog_background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #00000066;
+    .alert_dialog_content {
+        position: absolute;
+        width: 335px;
+        height: 170px;
+        padding: 20px 25px;
+        left: calc(50% - 200px);
+        top: 20vh;
+        background: #282d33;
+        border-radius: 7px;
+        box-shadow: 0 0 15px #00000088;
+        h2 {
+            margin-top: 11px;
+            color: #ddd;
+            letter-spacing: 0.4px;
+            font-size: 22px;
+        }
+        p {
+            color: #ddd;
+            letter-spacing: 0.4px;
+        }
+        > div {
+            display: flex;
+            gap: 15px;
+            justify-content: end;
+            button {
+                margin-top: 14px;
+                width: 92px;
+                height: 31px;
+                color: #eee;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+            button:nth-child(1) {
+                border: none;
+                background: #1c74b3;
+                &:hover {
+                    color: white;
+                    background: #2380c3;
+                }
+            }
+            button:nth-child(2) {
+                border: 1px solid #555;
+                background: #282d33;
+                &:hover {
+                    border: 1px solid #666;
+                    color: white;
+                    background: #2d3238;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.right-menu-content {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #404040;
+    background: rgba($color: #41465a, $alpha: 0.06);
+    > section {
+        overflow: hidden;
+        > h2 {
+            margin: 0;
+            color: #ccc;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 5%;
+            float: left;
+        }
+        .new-chat {
+            float: right;
+            margin: 5.5% 5%;
+            border: 1px solid #505050;
+            color: #bebebe;
+            padding: 5px 12px 6px 13px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            transition: 0.3s;
+            background: rgba($color: #1590e7, $alpha: 0.03);
+            span {
+                padding-right: 3px;
+            }
+            &:hover {
+                border: 1px solid #707070;
+                color: #e4e4e4;
+                cursor: pointer;
+                background: rgba($color: #1590e7, $alpha: 0.11);
+            }
+        }
+    }
+    .list-chats-content {
+        padding: 1px;
+        height: calc(100vh - 145px);
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+        }
+        &::-webkit-scrollbar-track {
+            background: linear-gradient(to bottom, #313449, #292b2f)
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #4d5167; /* Color del thumb del scrollbar */
+            border-radius: 10px; /* Bordes redondeados */
+            border: 3px solid #323448;
+            border-left: 4px solid #323448;
+        }
+    }
+    p.day {
+        color: white;
+        margin-left: 5%;
+        font-size: 14px;
+    }
+    .chat-list-text {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 5px;
+        border: 1px solid #444a52;
+        background: rgba($color: #666, $alpha: 0.03);
+        margin-bottom: 10px;
+        transition: 0.3s;
+        > p {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 8px 8px 8px 15px;
+            color: #ccc;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            &:hover {
+                background: #2e313e;
+                > span {
+                    opacity: 1;
+                }
+            }
+            > span {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #bbb;
+                background: #00000049;
+                font-size: 14px;
+                padding: 8px 10px;
+                transition: 0.2s;
+                border-radius: 0 4px 4px 0;
+                &:hover {
+                    color: white;
+                    background: #df4f4ccc;
+                }
+            }
+        }
+    }
+
+    .selected {
+        border-left: 4px solid rgba($color: #13b26d, $alpha: 0.8);
+        width: calc(90% - 3px);
+    }
+}
+
+@keyframes trash_frame {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

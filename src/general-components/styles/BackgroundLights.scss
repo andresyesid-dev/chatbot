@@ -1,0 +1,42 @@
+.light-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-48%, -46%);
+    width: 63vw;
+    height: 63vw;
+    background: radial-gradient(circle, rgba(#2ea1ff, 0.073), #1e2022 55%);
+    z-index: -1;
+}
+.light-one-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-40%, -40%);
+    width: 37vw;
+    height: 37vw;
+    background: radial-gradient(circle, rgba(#2ea1ff, 0.05),transparent 50%);
+    z-index: -1;
+}
+
+.light-two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(45%, -38%);
+    width: 82vw;
+    height: 82vw;
+    background: radial-gradient(circle, rgba(46, 89, 255, 0.13), #1e2022 55%);
+    z-index: -1;
+}
+
+.light-two-over {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(42%, -36%);
+    width: 42vw;
+    height: 42vw;
+    background: radial-gradient(circle, rgba(46, 46, 255, 0.14), transparent 55%);
+    z-index: -1;
+}
